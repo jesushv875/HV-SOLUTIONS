@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import 'aos/dist/aos.css'
 
 export default function Page() {
@@ -9,6 +9,7 @@ export default function Page() {
       AOS.init({ duration: 1000, once: true })
     })()
   }, [])
+  const [open, setOpen] = useState(false)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -24,19 +25,59 @@ export default function Page() {
   return (
     <main className="bg-gray-900 text-gray-200">
       {/* NAVBAR */}
-      <header className="bg-gray-800 text-white py-4 shadow-md">
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <img src="https://dummyimage.com/60x60/4F46E5/FACC15.png&text=HV" alt="Logo HV Solutions" className="w-12 h-12 rounded-full border-2 border-yellow-400" />
+      <header className="bg-gray-800 text-white shadow-md">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Branding */}
+          <div className="flex items-center gap-3">
+            <img
+              src="https://dummyimage.com/60x60/4F46E5/FACC15.png&text=HV"
+              alt="Logo HV Solutions"
+              className="w-12 h-12 rounded-full border-2 border-yellow-400"
+            />
             <h1 className="text-2xl font-bold text-yellow-400">HV Solutions</h1>
           </div>
-          <nav className="space-x-6">
+
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-6">
             <a href="#servicios" className="hover:text-yellow-400">Servicios</a>
             <a href="#porque" className="hover:text-yellow-400">¿Por qué elegirnos?</a>
             <a href="#planes" className="hover:text-yellow-400">Planes</a>
             <a href="#licencias" className="hover:text-yellow-400">Licencias</a>
             <a href="#proyectos" className="hover:text-yellow-400">Proyectos</a>
             <a href="#contacto" className="hover:text-yellow-400">Contacto</a>
+          </nav>
+
+          {/* Mobile toggle */}
+          <button
+            type="button"
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            aria-controls="mobile-menu"
+            aria-expanded={open ? "true" : "false"}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="sr-only">Abrir menú</span>
+            {/* Icono hamburger / close */}
+            {open ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                <path fillRule="evenodd" d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 1 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 1 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z" clipRule="evenodd"/>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75Zm0 5.25c0-.414.336-.75.75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm.75 4.5a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z"/>
+              </svg>
+            )}
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        <div id="mobile-menu" className={`${open ? "block" : "hidden"} md:hidden border-t border-gray-700`}>
+          <nav className="px-6 py-4 grid gap-4 bg-gray-800">
+            <a href="#servicios" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>Servicios</a>
+            <a href="#porque" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>¿Por qué elegirnos?</a>
+            <a href="#planes" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>Planes</a>
+            <a href="#licencias" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>Licencias</a>
+            <a href="#proyectos" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>Proyectos</a>
+            <a href="#contacto" className="block hover:text-yellow-400" onClick={() => setOpen(false)}>Contacto</a>
           </nav>
         </div>
       </header>
