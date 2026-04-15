@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'HV Solutions - Desarrollo Web y Soluciones Digitales',
+  title: 'HVJ Solutions - Desarrollo Web y Soluciones Digitales',
   description: 'Desarrollo web, e-commerce, POS y marketing digital a tu medida.',
   icons: {
     icon: '/img/HV_Logo.png', // asegúrate de tener este archivo en /public/img/HV_Logo.png
