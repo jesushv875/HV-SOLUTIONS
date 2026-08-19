@@ -25,7 +25,7 @@ export default function Page() {
     const correo = String(form.get('correo') || '')
     const mensaje = String(form.get('mensaje') || '')
     const texto = `Hola, soy ${nombre}. Mi correo es ${correo}. Mi mensaje: ${mensaje}`
-    const url = `https://wa.me/529212295670?text=${encodeURIComponent(texto)}`
+    const url = `https://wa.me/525522409684?text=${encodeURIComponent(texto)}`
     window.open(url, '_blank')
   }
 
@@ -53,7 +53,7 @@ export default function Page() {
               </a>
             ))}
             <a
-              href="https://wa.me/529212295670?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
+              href="https://wa.me/525522409684?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
               target="_blank"
               rel="noreferrer"
               className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/40 hover:-translate-y-0.5"
@@ -90,7 +90,7 @@ export default function Page() {
               </a>
             ))}
             <a
-              href="https://wa.me/529212295670?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
+              href="https://wa.me/525522409684?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
               target="_blank"
               rel="noreferrer"
               className="block text-center bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-3 rounded-lg transition-all mt-2"
@@ -144,7 +144,7 @@ export default function Page() {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
             {[
               { value: '3', label: 'Años en la operación de Telcel' },
-              { value: '9.62', label: 'Promedio de maestría en TI' },
+              { value: '1 mes', label: 'De ajustes incluidos tras la entrega' },
               { value: '3 días', label: 'Entrega de una landing page' },
               { value: '100%', label: 'Desarrollo propio, sin plantillas' },
             ].map((s) => (
@@ -371,7 +371,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <a
-                  href={`https://wa.me/529212295670?text=${cta}`}
+                  href={`https://wa.me/525522409684?text=${cta}`}
                   target="_blank"
                   rel="noreferrer"
                   className={`mt-auto block text-center font-bold py-3.5 rounded-xl transition-all duration-200 ${
@@ -467,7 +467,7 @@ export default function Page() {
                     </td>
                     <td className="py-5 px-6">
                       <a
-                        href={`https://wa.me/529212295670?text=Hola,%20quiero%20el%20Plan%20${cta}`}
+                        href={`https://wa.me/525522409684?text=Hola,%20quiero%20el%20Plan%20${cta}`}
                         target="_blank"
                         rel="noreferrer"
                         className="whitespace-nowrap bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
@@ -499,7 +499,7 @@ export default function Page() {
                 tag: 'Sistema POS',
                 title: 'Sistema POS',
                 desc: 'Software de punto de venta con control de inventario, reportes en tiempo real y gestión multi-sucursal.',
-                href: 'https://wa.me/529212295670?text=Hola,%20quiero%20acceso%20para%20probar%20el%20Sistema%20POS',
+                href: 'https://wa.me/525522409684?text=Hola,%20quiero%20acceso%20para%20probar%20el%20Sistema%20POS',
                 linkText: 'Pedir acceso demo',
                 delay: 0,
               },
@@ -563,7 +563,7 @@ export default function Page() {
               <h2 className="text-3xl md:text-4xl font-extrabold text-white">¿Listo para llevar tu negocio al siguiente nivel?</h2>
               <p className="mt-4 text-indigo-200 text-lg max-w-xl mx-auto">Agenda una consulta gratuita y descubre cómo podemos ayudarte a crecer.</p>
               <a
-                href="https://wa.me/529212295670?text=Hola,%20quiero%20una%20consulta%20gratuita%20con%20HVJ%20Solutions"
+                href="https://wa.me/525522409684?text=Hola,%20quiero%20una%20consulta%20gratuita%20con%20HVJ%20Solutions"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-block bg-white text-indigo-700 hover:bg-indigo-50 font-bold px-10 py-4 rounded-xl transition-all duration-200 shadow-lg hover:-translate-y-1 hover:shadow-xl"
@@ -590,7 +590,7 @@ export default function Page() {
                   {
                     icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.93 7.93 0 0 0 8 0C3.582 0 0 3.582 0 8a7.95 7.95 0 0 0 1.175 4.165L0 16l3.973-1.06A7.948 7.948 0 0 0 8 16c4.418 0 8-3.582 8-8a7.93 7.93 0 0 0-2.399-5.674Z"/></svg>,
                     label: 'WhatsApp',
-                    value: '+52 921 229 5670',
+                    value: '+52 55 2240 9684',
                     color: 'text-green-400',
                     bg: 'bg-green-500/10 border-green-500/20',
                   },
@@ -681,7 +681,7 @@ export default function Page() {
 
       {/* Botón flotante WhatsApp */}
       <a
-        href="https://wa.me/529212295670?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
+        href="https://wa.me/525522409684?text=Hola,%20quiero%20una%20cotización%20con%20HVJ%20Solutions"
         target="_blank"
         rel="noreferrer"
         aria-label="Contactar por WhatsApp"
