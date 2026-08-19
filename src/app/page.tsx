@@ -597,7 +597,7 @@ export default function Page() {
                   {
                     icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
                     label: 'Correo',
-                    value: 'jesushv875@icloud.com',
+                    value: 'jesushv875@gmail.com',
                     color: 'text-indigo-400',
                     bg: 'bg-indigo-500/10 border-indigo-500/20',
                   },
@@ -669,7 +669,7 @@ export default function Page() {
               </div>
               <span className="text-lg font-bold text-white">HVJ <span className="text-indigo-400">Solutions</span></span>
             </div>
-            <p className="text-gray-500 text-sm">© 2025 HVJ Solutions. Todos los derechos reservados.</p>
+            <p className="text-gray-500 text-sm">© 2026 HVJ Solutions. Todos los derechos reservados.</p>
             <div className="flex items-center gap-4">
               <a href="#servicios" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">Servicios</a>
               <a href="#planes" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">Planes</a>
