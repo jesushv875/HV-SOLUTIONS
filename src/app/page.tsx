@@ -143,10 +143,10 @@ export default function Page() {
           {/* Stats */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
             {[
-              { value: '5+', label: 'Años de experiencia' },
-              { value: '50+', label: 'Proyectos entregados' },
-              { value: '30+', label: 'Clientes satisfechos' },
-              { value: '24/7', label: 'Soporte disponible' },
+              { value: '3', label: 'Años en la operación de Telcel' },
+              { value: '9.62', label: 'Promedio de maestría en TI' },
+              { value: '3 días', label: 'Entrega de una landing page' },
+              { value: '100%', label: 'Desarrollo propio, sin plantillas' },
             ].map((s) => (
               <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
                 <div className="text-3xl font-extrabold text-indigo-400">{s.value}</div>
@@ -435,7 +435,7 @@ export default function Page() {
                     monthly: 'A cotizar',
                     yearly: 'A cotizar',
                     permanent: 'A cotizar',
-                    features: ['Personalización total', 'Integraciones a medida', 'Soporte 24/7 dedicado'],
+                    features: ['Personalización total', 'Integraciones a medida', 'Soporte prioritario por WhatsApp'],
                     missing: [],
                     cta: 'Empresarial%20de%20Licencia',
                     highlight: false,
