@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Las animaciones de AOS desplazan elementos 100px a la derecha antes de
+   entrar (fade-left), lo que produce scroll horizontal en celular hasta que
+   se disparan. Este es el arreglo recomendado por AOS. */
+html,
+body {
+  overflow-x: hidden;
+}
